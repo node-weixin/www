@@ -55,6 +55,10 @@ angular.module('wwwApp')
         name: 'link',
         title: '微信推广(二维码,URL)API',
         desc: ''
+      }, {
+        name: 'message',
+        title: '微信消息API',
+        desc: ''
       }]
     };
   });
