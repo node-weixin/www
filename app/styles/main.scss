@@ -1,30 +1,31 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "font-awesome/scss/font-awesome.scss";
 // endbower
-
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
+.navbar-default .navbar-brand {
+  color: #aaa;
+}
 
 body {
   padding: 0;
   font-size: 18px;
+  color: #555;
 }
-
 .navbar {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
-
 .navbar-brand.node-weixin {
   font-size: 32px;
   font-weight: 900;
-  text-shadow: 2px 2px 2px #333;
+  text-shadow: 1px 1px 1px #333;
 }
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -32,13 +33,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 /* Custom page header */
 .header {
   // border-bottom: 1px solid #e5e5e5;
   padding: 0;
   // margin-bottom: 10px;
-
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -47,44 +46,45 @@ body {
     // padding-bottom: 19px;
   }
 }
-
 /* Custom page footer */
 .footer {
   padding-top: 19px;
-  color: #777;
+  color: #555;
   border-top: 1px solid #e5e5e5;
 }
-
 .container-narrow > hr {
   margin: 30px 0;
 }
-
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-
   .btn {
     font-size: 21px;
     padding: 14px 24px;
   }
 }
-
 /* Supporting marketing content */
 .marketing {
-  margin: 0px 0;
-
+  margin: 0;
   p + h4 {
     // margin-top: 28px;
   }
+  .theme-box {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  }
 }
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container-fluid {
-    padding: 0px 50px;
+    padding: 0 50px;
   }
-
   /* Remove the padding we set earlier */
   .header,
   .marketing,
