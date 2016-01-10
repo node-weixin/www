@@ -12,7 +12,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 .navbar-default .navbar-brand {
   color: #aaa;
 }
-
 body {
   padding: 0;
   font-size: 18px;
@@ -51,6 +50,7 @@ body {
   padding-top: 19px;
   color: #555;
   border-top: 1px solid #e5e5e5;
+  padding-bottom: 36px;
 }
 .container-narrow > hr {
   margin: 30px 0;
@@ -80,6 +80,9 @@ body {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   }
 }
+.text-center.pay > img {
+  height: 400px;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container-fluid {
@@ -100,5 +103,34 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-brand.node-weixin {
+    margin-left: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #333;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h3.pay {
+    line-height: 30px;
+  }
+  .marketing {
+    font-size: 16px;
+    padding: 0;
+    .theme-box {
+      font-size: 16px;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: 0 solid #e2e2e2;
+      box-shadow: none;
+    }
+  }
+  .text-center.pay > img {
+    height: 200px;
   }
 }
