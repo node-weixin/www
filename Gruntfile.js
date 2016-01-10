@@ -413,7 +413,7 @@ module.exports = function (grunt) {
             'CNAME',
             '*.{ico,png,txt}',
             '*.html',
-            'images/{,*/}*.{webp}',
+            'images/{,*/}*.{webp,jpg,png}',
             'styles/fonts/{,*/}*.*'
           ]
         }, {
@@ -446,7 +446,7 @@ module.exports = function (grunt) {
       ],
       dist: [
         'compass:dist',
-        // 'imagemin',
+        //'imagemin',
         'svgmin'
       ]
     },
