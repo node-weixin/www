@@ -79,6 +79,28 @@ body {
     border-radius: 3px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   }
+  h3.forum {
+    background: linear-gradient(to right, #009688, #FFF);
+    padding: 10px 10px;
+    color: #FFF;
+  }
+  .media.post {
+    .media-left {
+      a {
+        img {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          padding: 0;
+          margin: 0;
+          border: 0;
+        }
+      }
+    }
+    .media-body {
+      vertical-align: middle;
+    }
+  }
 }
 .text-center.pay > img {
   height: 400px;
