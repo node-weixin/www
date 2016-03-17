@@ -1,23 +1,23 @@
 'use strict';
 
-describe('Controller: AboutCtrl', function () {
+describe('Controller: ForumCtrl', function () {
 
   // load the controller's module
   beforeEach(module('wwwApp'));
 
-  var AboutCtrl,
+  var ForumCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AboutCtrl = $controller('AboutCtrl', {
+    ForumCtrl = $controller('ForumCtrl', {
       $scope: scope
       // place here mocked dependencies
     });
   }));
 
-  it('should run AboutCtrl', function () {
+  it('should run ForumCtrl', function () {
     expect(0).toBe(0);
   });
 });

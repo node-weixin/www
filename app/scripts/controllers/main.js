@@ -8,11 +8,9 @@
  * Controller of the wwwApp
  */
 angular.module('wwwApp')
-  .controller('MainCtrl', function($scope, projects, express, forum) {
+  .controller('MainCtrl', function($scope, projects, express) {
     $scope.projects = projects.data;
     $scope.express = express.data;
-    forum.get(function(res) {
-      console.log(res.data.data);
-      $scope.posts = res.data.data;
-    });
+    $('.nav > li').removeClass('active');
+    $('.nav > li.home').addClass('active');
   });

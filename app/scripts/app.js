@@ -29,6 +29,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/forum', {
+        templateUrl: 'views/forum.html',
+        controller: 'ForumCtrl',
+        controllerAs: 'forum'
+      })
       .otherwise({
         redirectTo: '/'
       });
