@@ -12,10 +12,20 @@
         </a>
       </div>
       <div class="media-body">
-        <h4 class="media-heading">
-          <a href="http://forum.node-weixin.com/topic/{{post.id}}">{{post.title}}</a>
-          <span class="label label-default pull-right">{{post.create_at | ios:'arrival'}}</span</h4>
-        </div>
+        <h4>
+          <a class="title" href="http://forum.node-weixin.com/topic/{{post.id}}">{{post.title}}</a>
+          <br/>
+          <a href="#/forum/tag/{{post.tab}}"><span class="label label-default">{{post.tab | tag}}</span></a>
+          <span class="label label-info">访问: {{post.visit_count}}</span>
+          <span class="label label-warning">评论: {{post.reply_count}}</span>
+          <a href="#/forum/user/{{post.author_id}}"><span class="label label-success">{{post.author.loginname}}</span></a>
+          <!-- <span class="label label-default">{{post.create_at | ios:'arrival'}}</span> -->
+          <!-- <span class="label label-danger">最后回复:</span> -->
+          <span class="label label-default pull-right">{{post.create_at | ios:'arrival'}}</span>
+
+
+        </h4>
       </div>
     </div>
   </div>
+</div>

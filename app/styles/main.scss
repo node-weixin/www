@@ -81,11 +81,14 @@ body {
   }
   h3.forum {
     background: linear-gradient(to right, #009688, #FFF);
-    padding: 10px 10px;
+    padding: 10px;
     color: #FFF;
   }
   .media.post {
+    margin-top: 5px;
     .media-left {
+      vertical-align: bottom;
+      text-align: center;
       a {
         img {
           display: inline-block;
@@ -98,7 +101,27 @@ body {
       }
     }
     .media-body {
-      vertical-align: middle;
+      vertical-align: bottom;
+      position: relative;
+      h4 {
+        border: 5px;
+        margin: 5px;
+        a {
+          color: #555;
+          text-decoration: none;
+        }
+        a.title {
+        }
+        span {
+          font-size: 10px;
+          padding: 2px;
+        }
+        span.pull-right {
+          position: absolute;
+          right: 20px;
+          top: 15px;
+        }
+      }
     }
   }
 }
