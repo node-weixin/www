@@ -1,6 +1,7 @@
 image: node:4.2.2
 
 pages:
+  stage: deploy
   cache:
     paths:
     - node_modules/
@@ -19,4 +20,4 @@ pages:
     paths:
     - dist
   only:
-    - pages
+    - master
