@@ -19,7 +19,8 @@ describe('Filter: ios', function () {
 
     it('should be able to get today arrival time', function () {
       var text = new Date();
-      expect(ios(text, 'arrival')).toBe('今天 ' + moment(text).format('hh:mm'));
+      var tz = 'Asia/Shanghai';
+      expect(ios(text, 'arrival')).toBe('今天 ' + moment(text).tz(tz).format('hh:mm'));
     });
 
     it('should be able to get ios time', function () {
