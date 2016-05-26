@@ -8,7 +8,7 @@ pages:
 
   script:
   - apt-get update -y
-  - apt-get install -y ruby gems
+  - apt-get install -y ruby gems ruby-dev
   - npm install -g grunt
   - npm install -g bower
   - npm install
