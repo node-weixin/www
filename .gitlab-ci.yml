@@ -1,0 +1,17 @@
+image: node:4.2.2
+
+pages:
+  cache:
+    paths:
+    - node_modules/
+    - bower_components/
+
+  script:
+  - npm install -g grunt
+  - npm install
+  - grunt
+  artifacts:
+    paths:
+    - dist
+  only:
+    - master
