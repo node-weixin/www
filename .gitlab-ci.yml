@@ -10,7 +10,7 @@ pages:
   - npm install -g grunt
   - npm install -g bower
   - npm install
-  - bower install
+  - bower install --allow-root
   - grunt
   artifacts:
     paths:
