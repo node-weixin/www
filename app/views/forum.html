@@ -1,18 +1,20 @@
-<div class="row text-left marketing">
-  <div class="col-md-12">
-    <h3 class="forum">
+<div ng-include="'views/header.html'"></div>
+<div class="container-fluid">
+  <div class="row text-left marketing">
+    <div class="col-md-12">
+      <h3 class="forum">
       <span>微信论坛</span>
       <a class="label label-danger pull-right" href="http://forum.node-weixin.com/">
         <span>+</span>我要提问</a>
     </h3>
-    <div class="media post" ng-repeat="post in posts">
-      <div class="media-left">
-        <a href="http://forum.node-weixin.com/user/{{post.author.loginname}}">
-          <img class="media-object" ng-src="{{post.author.avatar_url}}" ng-alt="{{post.author.loginname}}">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4>
+      <div class="media post" ng-repeat="post in posts">
+        <div class="media-left">
+          <a href="http://forum.node-weixin.com/user/{{post.author.loginname}}">
+            <img class="media-object" ng-src="{{post.author.avatar_url}}" ng-alt="{{post.author.loginname}}">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4>
           <a class="title" href="http://forum.node-weixin.com/topic/{{post.id}}">{{post.title}}</a>
           <br/>
           <a href="#/forum/tag/{{post.tab}}"><span class="label label-default">{{post.tab | tag}}</span></a>
@@ -22,9 +24,8 @@
           <!-- <span class="label label-default">{{post.create_at | ios:'arrival'}}</span> -->
           <!-- <span class="label label-danger">最后回复:</span> -->
           <span class="label label-default pull-right">{{post.create_at | ios:'arrival'}}</span>
-
-
         </h4>
+        </div>
       </div>
     </div>
   </div>

@@ -1,4 +1,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$fa-font-path: "../bower_components/font-awesome-sass/assets/fonts/font-awesome/";
+
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "font-awesome/scss/font-awesome.scss";
@@ -19,6 +21,8 @@ body {
 }
 .navbar {
   margin-bottom: 0;
+  border-radius: 0px;
+  border: 0;
 }
 .navbar-brand.node-weixin {
   font-size: 32px;
@@ -47,10 +51,24 @@ body {
 }
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #555;
-  border-top: 1px solid #e5e5e5;
-  padding-bottom: 36px;
+  color: #FFF;
+  margin: 0;
+  background-color: #094479;
+  .container {
+  .row {
+    div {
+      margin: 30px auto;
+    }
+          div.text-right {
+        a {
+          display: inline-block;
+          width: 50px;
+          font-size: 30px;
+          color: #AAA;
+        }
+      }
+  }
+  }
 }
 .container-narrow > hr {
   margin: 30px 0;
@@ -59,10 +77,10 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+  // .btn {
+  //   font-size: 21px;
+  //   padding: 14px 24px;
+  // }
 }
 /* Supporting marketing content */
 .marketing {
@@ -128,6 +146,99 @@ body {
 .text-center.pay > img {
   height: 400px;
 }
+
+  .jumbotron {
+    padding: 30px;
+    margin-bottom: 30px;
+    color: #FFF;
+    background-color: #3f51b5;
+    .name {
+      color: #9e9e9e;
+    }
+    .weixin-btn {
+      margin-top: 20px;
+      border: 3px solid #FFF;
+      color: #EEE;
+      // border-radius: 0px;
+      background-color: #1a30aa;
+    }
+  }
+  .navbar {
+    border-radius: 0px;
+  }
+  .command {
+    display: block;
+  }
+  .command span:before {
+    content: "$";
+    opacity: .5;
+    padding-right: 10px;
+  }
+  .command span, .command a{
+    background: #112387;
+    font-family: Source Code Pro,Monaco,Menlo,Consolas,monospace;
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .command a {
+    text-decoration: none;
+    background: #2d0f64;
+    color: #FFF;
+    margin-left: -5px;
+    user-select: none;
+  }
+.container-fluid.nav {
+  background-color: #094479;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #FFF;
+}
+
+.container-fluid.info, .container-fluid.intro {
+  background-color: auto;
+  .row {
+    margin: 0;
+  }
+ .div {
+  color: #FFF;
+  // height: 200px;
+  // float: none;
+  padding: 30px;
+  div {
+    .left {
+      i {
+        font-size: 80px;
+      }
+    }
+    .right {
+      text-align: left;
+      margin: 0;
+      padding: 20px;
+    }
+  }
+ }
+ .div-color-1{
+   background-color: #4CAF50;
+ }
+  .div-color-2{
+   background-color: #e91e63;
+ }
+  .div-color-3{
+   background-color: #9c27b0;
+ }
+  .div-color-4{
+   background-color: #2196f3;
+ }
+
+   .div-color-5{
+   background-color: #a136f3;
+ }
+}
+
+.container-fluid.intro {
+  margin-top: 50px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container-fluid {
@@ -146,16 +257,20 @@ body {
     // margin-bottom: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
 }
+
 @media screen and (max-width: 768px) {
-  .navbar-brand.node-weixin {
+ .jumbotron{
+    padding: auto 30px;  
+}
+  .navbar {
+    border-radius: 0px;
+    border: 0;
+  }
+  .navbar-brand {
     margin-left: 25px;
     font-size: 24px;
     font-weight: 600;
-    text-shadow: 1px 1px 1px #333;
   }
   h3 {
     font-size: 20px;
