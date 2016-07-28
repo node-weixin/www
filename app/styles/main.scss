@@ -1,5 +1,5 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-$fa-font-path: "../bower_components/font-awesome-sass/assets/fonts/font-awesome/";
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap";
+$fa-font-path: "../bower_components/font-awesome-sass/assets/fonts/font-awesome";
 
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
@@ -152,6 +152,8 @@ body {
     margin-bottom: 30px;
     color: #FFF;
     background-color: #3f51b5;
+    background: linear-gradient(141deg, #21339a 10%, #3F51B5 30%, #2b3777 51%);
+    background: linear-gradient(141deg, #2e3c8d 10%, #2c49ea 30%, #2c3981 51%);
     .name {
       color: #9e9e9e;
     }
@@ -189,11 +191,12 @@ body {
   }
 .container-fluid.nav {
   background-color: #094479;
+  background-color: #1b2141;
 }
-.navbar-default .navbar-nav > li > a {
-  color: #FFF;
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #FFF
 }
-
 .container-fluid.info, .container-fluid.intro {
   background-color: auto;
   .row {
