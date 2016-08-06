@@ -39,6 +39,11 @@ angular
         controller: 'ForumCtrl',
         controllerAs: 'forum'
       })
+      .when('/download/tool', {
+        templateUrl: 'views/download.html',
+        controller: 'MainCtrl',
+        controllerAs: 'forum'
+      })
       .otherwise({
         redirectTo: '/'
       });
